@@ -1,1 +1,61 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter No:" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioOddEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odd or Even" />
+
+        <RadioButton
+            android:id="@+id/radioPosNeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive or Negative" />
+
+        <RadioButton
+            android:id="@+id/radioSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ans: "
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
