@@ -1,1 +1,54 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 1"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number 2"
+        android:inputType="numberDecimal"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginTop="16dp">
+
+        <Button android:id="@+id/btnAdd" android:text="+" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btnSub" android:text="-" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btnDiv" android:text="/" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btnMul" android:text="x" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1"/>
+        <Button android:id="@+id/btnClear" android:text="C" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="2"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

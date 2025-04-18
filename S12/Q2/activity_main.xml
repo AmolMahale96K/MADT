@@ -1,1 +1,91 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Input for name -->
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="text" />
+
+    <!-- Radio buttons for text formatting (Bold, Italic, Underline) -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/boldRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bold" />
+        <RadioButton
+            android:id="@+id/italicRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Italic" />
+        <RadioButton
+            android:id="@+id/underlineRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Underline" />
+    </RadioGroup>
+
+    <!-- Checkboxes for text color (Red, Green, Blue) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/redColorCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+        <CheckBox
+            android:id="@+id/greenColorCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+        <CheckBox
+            android:id="@+id/blueColorCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+    </LinearLayout>
+
+    <!-- Button to display the message -->
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display" />
+
+    <!-- Button to clear the inputs -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <!-- Button to exit the app -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+
+    <!-- Label to display the formatted message -->
+    <TextView
+        android:id="@+id/displayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your message will appear here"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

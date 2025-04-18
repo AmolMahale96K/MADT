@@ -1,1 +1,56 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/emailTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To (email)"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/emailSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject" />
+
+        <EditText
+            android:id="@+id/emailMessage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Message"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/attachBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attach File" />
+
+        <TextView
+            android:id="@+id/attachStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file attached"
+            android:padding="8dp"
+            android:textColor="#333"/>
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Email" 
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>

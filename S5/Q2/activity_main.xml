@@ -1,1 +1,91 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Input field for name -->
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="text" />
+
+    <!-- Button to display message -->
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Message" />
+
+    <!-- Checkboxes for text format -->
+    <CheckBox
+        android:id="@+id/boldCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bold" />
+
+    <CheckBox
+        android:id="@+id/italicCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Italic" />
+
+    <CheckBox
+        android:id="@+id/underlineCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Underline" />
+
+    <!-- Radio buttons for color selection -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/redColorRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/greenColorRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+
+        <RadioButton
+            android:id="@+id/blueColorRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+    </RadioGroup>
+
+    <!-- Label to display the message -->
+    <TextView
+        android:id="@+id/displayLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your message will appear here."
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="center" />
+
+    <!-- Buttons for clear and exit actions -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit" />
+</LinearLayout>

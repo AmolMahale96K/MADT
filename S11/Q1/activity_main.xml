@@ -1,1 +1,41 @@
  
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- EditText for first number -->
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal" />
+
+    <!-- EditText for second number -->
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal" />
+
+    <!-- Button to calculate power -->
+    <Button
+        android:id="@+id/powerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Power"
+        android:layout_marginTop="20dp" />
+
+    <!-- Button to calculate average -->
+    <Button
+        android:id="@+id/averageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Average"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

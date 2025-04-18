@@ -1,1 +1,25 @@
- 
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- EditText for player name input -->
+    <EditText
+        android:id="@+id/playerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player Name"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <!-- Button to show the player name -->
+    <Button
+        android:id="@+id/showNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Player Name"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
